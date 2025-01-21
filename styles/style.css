@@ -139,12 +139,46 @@
     .navbar::after{
         display: block;
     }
+    .banner{
+        margin-left: -160px;
+        width: 576px;
+        
+        
+    }
+    .head-para{
+        font-size: 0.87rem;
+        font-weight: 500;
+    }
 
     .navbar{
         border: 1px solid #FEA301;
-        width: 269px;
+        width: 380px;
         height: 70px;
         margin: 0;
+    }
+    .banner-img{
+        width: 336px;
+        height: 413px;
+        order: -1;
+       
+    }
+    .banner-title{
+        width: 357px;
+        height: 282px;
+        margin-left: 100px;
+        margin-right: 5px;
+        margin-top: 160px;
+        text-align: center;
+    }
+    .head-title{
+        font-size: 2rem;
+        font-weight: bold;
+       
+    }
+    .btn-2{
+        width: 131px;
+        height: 42px;
+        font-size: 1rem;
     }
     
 }
