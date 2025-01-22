@@ -1,3 +1,4 @@
+
 .quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -30,7 +31,15 @@
     height: 50px;
     border: none;
 }
+.white{
+    color: #ffffff;
+}
+.footer-nav{
+    font-weight: 500;
+    font-size: 1.25rem;
+}
 /* header section */
+
 .navbar{
     justify-content: space-between;
     align-items: center;
@@ -116,12 +125,16 @@
     width: 468px;
     height: 575px;
 }
-/* main section */
+.marquee{
+    width: 1000px;
+    background-color: #bcebff;
+    margin-left: 100px;
+    color: darkblue;
 
-main > section{
-    max-width: 1440px;
-    max-height: 879px;
 }
+/* main section */
+/* first section */
+
 .main-content-body{
     background-image: url('../assets/bg.png');
     background-repeat: no-repeat;
@@ -129,6 +142,8 @@ main > section{
     background-size: cover;
     justify-items: center;
     align-items: center;
+    max-width: 1440px;
+    max-height: 879px;
 }
 .container{
     width: 1160px;
@@ -207,15 +222,188 @@ main > section{
 .arrow img {
     width: 24px;
     height: auto;
-    filter: invert(1);
+    filter: invert(1);  
+}
+
+/* second section */
+.our-story{
+    background:linear-gradient(to top, rgba(244, 210, 138, 0.8), rgba(232, 228, 228, 0.1)), url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1440px;
+    height: 1080px;
+}
+.full-container{
+    justify-content: space-between;
+    width: 1160px;
+    height: 630px;
+    margin-left: 40px;
+    margin-top: 170px;
+   
+}
+.second-title{
+    font-size: 2.87rem;
+    font-weight: bold;
+    text-align: center;
+}
+.description{
+    margin-left: 25px;
+}
+.main-title02{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.para02{
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #808080;
+    margin-left: 30px;
+}
+.img-01{
+    width: 540px;
+    height: 337px;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    margin: 0;
+    margin-top: -18px;
+}
+.img-btn{
+    background-color: #3CD8E8;
+    border-radius: 47px;
+    border: none;
+    color: #ffffff;
+    width: 174px;
+    height: 47px;
+    margin-top: -30px;
+    margin-left: 25px;
+}
+.container-02{
+    background-color: #ffffff;
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+
+}
+/* four image */
+.four-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    width: 601px;
+    height: 622px;
+    margin-left: 30px;
+   
+}
+.img-container{
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 290px;
+    height: 301px;
+
+}
+/* extra image */
+.extra-img{
+    display: none;
+}
+.img-common{
+    width: 290px;
+    height: 177px;
+    border-radius: 16px 16px 0 0 ;
+
+}
+.img-btn-same{
+    background-color: #95B226;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 47px;
+    border: none;
+    width: 174px;
+    height: 38px;
+    margin-top: -25px;
+    margin-left: 20px;
+}
+.img-btn-purple{
+    background-color: #5D58F0;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 47px;
+    border: none;
+    width: 174px;
+    height: 38px;
+    margin-left: 30px;
+    margin-top: -25px;
     
+}
+.same-title{
+    font-size: 0.93rem;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.last-btn{
+   margin-top: 50px;
+   margin-left: 38%;
+}
+
+/* footer section */
+.footer-bg{
+    background-color: #01ACFD;
+    width: 1439px;
+    height: 519px;
+}
+.footer-container{
+    justify-content: space-around;
+    align-items: center;
+    width: 1070px;
+    height: 222px;
+    padding-top: 150px;
+    padding-left: 30px;
+
+}
+.footer-logo{
+    width: 82px;
+    height: 81px;
+    
+}
+.kids{
+    font-size: 2.62rem;
+    font-weight: bold;
+}
+.footer-para{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.about-school{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.keep-in-touch{
+    font-size: 1.62rem;
+    font-weight: bold;
+}
+.logo-size{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+.nav-item02{
+    list-style: none;
+    gap: 40px;
 }
 /* responsive for small device */
 @media screen and (max-width:576px) {
     .navbar,
     .nav-item,
     .banner,
-    .container{
+    .container,
+    .full-container,
+    .four-img,
+    .footer-container,
+    .first-logo-div{
         flex-direction: column;
 
     }
@@ -234,11 +422,12 @@ main > section{
     .navbar::after{
         display: block;
     }
+    .marquee{
+     display: none;
+    }
     .banner{
         margin-left: -160px;
         width: 576px;
-        
-        
     }
     .head-para{
         font-size: 0.87rem;
@@ -276,6 +465,7 @@ main > section{
         font-size: 1rem;
     }
     /*main section*/
+    /* first section */
     .main-content-body{
         margin-top: 300px;
         
@@ -315,6 +505,110 @@ main > section{
         display: none;
 
     }
+
+    /* second section */
+    .our-story{
+        width: 390px;
+        height: 768px;
+        margin-top: 450px
+    }
+    .container-02{
+        display: none;
+    }
+    .four-img{
+        grid-template-columns: repeat(2, 1fr);
+        width: 358px;
+        height: 561px;
+        margin-top: -140px;
+    }
+    .second-title{
+        font-size: 1.625rem;
+        font-weight: bold;
+    }
+    .img-container{
+        width: 173px;
+        height: 179px;
+        margin-left: -60px;
+    }
+    .extra-img{
+        display: block;
+    }
+    .img-common{
+        width: 173px;
+        height: 105px;
+    }
+    .img-btn-same{
+        width: 103px;
+        height: 22px;
+        font-size:0.56rem ;
+        font-weight: 500;
+    }
+    .img-btn-purple{
+        width: 103px;
+        height: 22px;
+        font-size:0.56rem ;
+        font-weight: 500;
+
+    }
+    .same-title{
+        font-size: 0.56rem;
+        font-weight: bold;
+    }
+    .last-btn{
+     display: none;  
+    }
     
+    /*footer section*/
     
+    .footer-bg{
+        width: 390px;
+        height: 682px;
+    }
+    .footer-container{
+        width: 60%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .logo-size{
+        width: 250px;
+        height: 69px;
+        border-radius: 4px;
+    }
+    .kids{
+     font-size: 2.18rem;
+     font-weight: bold;
+    }
+    .footer-para{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .about-school{
+        font-size:1.25rem ;
+        font-weight: 600;
+    }
+    .footer-nav{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .keep-in-touch{
+        font-size: 1.37rem;
+        font-weight: bold;
+    }
+    .logo-size{
+        width: 33px;
+        height: 33px;
+    }
+    .second{
+        margin-left: -90px;
+    }
+    .nav-item02{
+        margin-left: -40px;
+    }
+    .third{
+        margin-left: -50px;
+    }
+    
+
 }
